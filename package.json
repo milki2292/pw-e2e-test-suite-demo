@@ -1,0 +1,22 @@
+{
+  "name": "pw-e2e-test-suite-demo",
+  "version": "1.0.0",
+  "description": "This project contains a collection of automated tests using Playwright for a set of real-world demo websites. It’s structured to demonstrate essential test coverage types (login, forms, search, UI elements, API, responsive testing, etc.), with clean code and CI integration - perfect for recruiters and teams evaluating your automation capabilities.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milki2292/pw-e2e-test-suite-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milki2292/pw-e2e-test-suite-demo/issues"
+  },
+  "homepage": "https://github.com/milki2292/pw-e2e-test-suite-demo#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.1.0"
+  }
+}
