@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { PageManager } from '../page-objects/pageManager';
 import { faker } from '@faker-js/faker';
 
 test.beforeEach(async ({ page }) => {
@@ -84,4 +83,19 @@ test('Fill form with invalid data', async ({ page }) => {
   await page.locator('.card-content').getByRole('button').click();
 
   expect(await page.reload()).not;
+});
+
+test('File Upload', async ({ page }) => {
+  await page.goto('https://letcode.in/file');
+
+  const fileChooserPromise = page.waitForEvent('filechooser');
+  await page.getByText(' Choose a file… ').click();
+  const fileChooser = await fileChooserPromise;
+  await fileChooser.setFiles('./attachments/sample.pdf');
+  //Confirm file was attached
+  expect(
+    page.locator('[class="label ng-star-inserted"]', {
+      hasText: 'Selected File: sample.pdf',
+    })
+  ).toBeTruthy();
 });
