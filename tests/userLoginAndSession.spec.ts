@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { PageManager } from '../page-objects/pageManager';
 import { LoginToSwag } from '../page-objects/loginToSwag'; // importing LoginToSwag class
 
 test.beforeEach(async ({ page }) => {
@@ -6,8 +7,11 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('Login User with correct email and password', async ({ page }) => {
+  // const pm = new PageManager(page); - It is possible to use page manager class
+  // await pm.logIn().standardUser();
+
   const logIn = new LoginToSwag(page); // Creating new instance of LoginToSwag
-  await logIn.loginStandardUser(); // Using method from LoginToSwag class
+  await logIn.standardUser(); // Using method from LoginToSwag class
 
   await expect(page.locator('#contents_wrapper')).toBeVisible(); //User is logged in and articles section is visible
 });
@@ -24,7 +28,7 @@ test('Login User with incorrect email and password', async ({ page }) => {
 
 test('Logout User', async ({ page }) => {
   const logIn = new LoginToSwag(page);
-  await logIn.loginStandardUser();
+  await logIn.standardUser();
   await page.locator('#react-burger-menu-btn').click();
   await page.locator('#logout_sidebar_link').click();
 
@@ -34,9 +38,8 @@ test('Logout User', async ({ page }) => {
 });
 
 test('Locked-out user scenario', async ({ page }) => {
-  await page.getByPlaceholder('Username').fill('locked_out_user');
-  await page.getByPlaceholder('Password').fill('secret_sauce');
-  await page.getByRole('button').click();
+  const pm = new PageManager(page);
+  await pm.logIn().lockedUser(); // Login as locked user with usage of page manager
 
   await expect(
     page.locator(

@@ -24,7 +24,7 @@ Site: [Sauce Demo](https://www.saucedemo.com/)
 
 Add products to cart
 
-Remove items
+Remove items from Cart
 
 Verify total price
 

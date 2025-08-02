@@ -40,4 +40,18 @@ export class CreateCart {
       await this.page.getByRole('button', { name: 'Remove' }).first().click();
     }
   }
+
+  async sumUpPrices() {
+    const prices = this.page.locator('.inventory_item_price').all();
+
+    let sum: number = 0;
+
+    for (const price of await prices) {
+      let stringValue = await price.textContent();
+      let numberValue = parseFloat(stringValue?.slice(1) || '');
+      sum = sum + numberValue;
+    }
+
+    return sum;
+  }
 }
