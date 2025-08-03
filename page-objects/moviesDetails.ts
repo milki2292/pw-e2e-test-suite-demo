@@ -35,9 +35,10 @@ export class MoviesDetails {
     await this.page
       .locator('[class="label label--small upper"]', { hasText: `${filter1}` })
       .click();
-
+    //Creating list of options to be selected
     const listOfOptions1 = options1.split(' ');
 
+    //Selecting options
     for (let option1 of listOfOptions1) {
       await this.page.locator(`select-label :text-is("${option1}")`).click();
       await expect(
@@ -47,6 +48,7 @@ export class MoviesDetails {
       ).toBeTruthy();
     }
 
+    //Applying filter
     await this.page.getByRole('button', { name: 'Apply' }).click();
 
     await this.page

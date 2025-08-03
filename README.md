@@ -58,11 +58,9 @@ Test Types: Search, filters,
 
 Site: [TodoMVC](https://todomvc.com/examples/react/dist/)
 
-Run tests on desktop and mobile (e.g., iPhone 12)
+Run tests on mobile (e.g., iPhone 15 pro max)
 
-Add/edit/delete todo items
-
-Verify persistence
+Add/delete todo items
 
 Test Types: Responsive design, mobile viewport emulation, cross-browser
 
