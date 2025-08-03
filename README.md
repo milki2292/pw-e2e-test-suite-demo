@@ -32,17 +32,17 @@ Checkout
 
 Test Types: UI interactions, workflow, assertions
 
-### 📌 3. Form Validation
+### 📌 3. Form Fields fill
 
 Site: [LetCode](https://letcode.in/forms)
 
 Fill form with valid data
 
-Trigger and validate errors
+Fill form with invalid data
 
 Upload file
 
-Test Types: Form validation, input edge cases, file upload
+Test Types: Form validation, Form validation failure, file upload
 
 ### 📌 4. Search and Filtering
 
@@ -50,7 +50,7 @@ Site: [Rotten Tomatoes](https://www.rottentomatoes.com/)
 
 Search by title
 
-Filter by category
+Search by filtering
 
 Test Types: Search, filters,
 
