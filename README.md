@@ -52,7 +52,7 @@ Search by title
 
 Search by filtering
 
-Test Types: Search, filters,
+Test Types: Search, filters
 
 ### 📌 5. Responsive & Cross-Browser Testing
 
@@ -62,14 +62,14 @@ Run tests on mobile (e.g., iPhone 15 pro max)
 
 Add/delete todo items
 
-Test Types: Responsive design, mobile viewport emulation, cross-browser
+Test Types: Responsive design, mobile viewport emulation
 
 ### 📌 6. API Testing with Playwright
 
 Site: [conduit](https://conduit.bondaracademy.com/)
 
-Validate POST login
+Modifying API Response
 
-Check status codes and response schema
+Create an article using API call and delete it
 
 Test Types: API calls, schema validation, status assertions
