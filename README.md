@@ -74,6 +74,10 @@ Create an article using API call and delete it
 
 Test Types: API calls, schema validation, status assertions
 
+###  Project structure:
+
+<img width="263" height="514" alt="Image" src="https://github.com/user-attachments/assets/9a326787-b873-422a-83c2-3ff9de765837" />
+
 ### ✅✅✅ Test Results:
 
 <img width="287" height="518" alt="Image" src="https://github.com/user-attachments/assets/9f92cb4a-a518-41d4-a108-03760a585fb1" />
