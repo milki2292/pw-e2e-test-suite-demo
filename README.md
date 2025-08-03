@@ -54,19 +54,7 @@ Search by filtering
 
 Test Types: Search, filters,
 
-### 📌 5. UI Components / Accessibility Check
-
-Site: [The Internet Heroku](https://the-internet.herokuapp.com/)
-
-Dropdowns
-
-Broken images
-
-Check keyboard accessibility (optional)
-
-Test Types: UI component behavior, accessibility, visual checks
-
-### 📌 6. Responsive & Cross-Browser Testing
+### 📌 5. Responsive & Cross-Browser Testing
 
 Site: [TodoMVC](https://todomvc.com/examples/react/dist/)
 
@@ -78,7 +66,7 @@ Verify persistence
 
 Test Types: Responsive design, mobile viewport emulation, cross-browser
 
-### 📌 7. API Testing with Playwright
+### 📌 6. API Testing with Playwright
 
 Site: [conduit](https://conduit.bondaracademy.com/)
 
