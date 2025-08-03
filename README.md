@@ -73,3 +73,7 @@ Modifying API Response
 Create an article using API call and delete it
 
 Test Types: API calls, schema validation, status assertions
+
+### ✅✅✅ Test Results:
+
+<img width="287" height="518" alt="Image" src="https://github.com/user-attachments/assets/9f92cb4a-a518-41d4-a108-03760a585fb1" />
