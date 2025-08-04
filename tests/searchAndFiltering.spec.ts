@@ -59,7 +59,11 @@ test('Search by filtering', async ({ page }) => {
     .movies()
     .searchByfilters('genre', 'Holiday News', 'rating', 'NC-17', false);
 
-  expect(
-    await page.locator('empty-state h2', { hasText: 'No results' }).isVisible()
-  ).toBeTruthy();
+  await page.mouse.wheel(0, -200);
+
+  const noResuts = await page
+    .locator('empty-state h2', { hasText: 'No results' })
+    .isVisible();
+
+  expect(noResuts == true);
 });
